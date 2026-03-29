@@ -87,7 +87,7 @@ module.exports = async function handler(req, res) {
     // Send via Resend
     const { data, error } = await resend.emails.send({
       from: "SwiftSites Tradie Offer <noreply@swiftsites.nz>",
-      to: ["fadereport@gmail.com"],
+      to: ["swiftsites@swiftsites.nz"],
       reply_to: email,
       subject: `New Tradie Enquiry - ${name} (${business_type})`,
       html: htmlBody,
